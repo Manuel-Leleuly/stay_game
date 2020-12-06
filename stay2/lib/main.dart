@@ -1,3 +1,4 @@
+import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flame/util.dart';
@@ -7,6 +8,8 @@ import 'package:stay/stay-game.dart';
 
 SharedPreferences storage;
 StayGame game;
+
+const String testDevice = 'Mobile_id';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -32,6 +35,38 @@ class RunApp extends StatefulWidget {
 }
 
 class _RunAppState extends State<RunApp> {
+  static const MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
+    testDevices: testDevice != null ? <String>[testDevice] : null,
+    nonPersonalizedAds: true,
+    keywords: <String>['Game','Puzzle','Block']
+  );
+  BannerAd _bannerAd;
+  BannerAd createBannerAd(){
+    return BannerAd(
+      adUnitId: BannerAd.testAdUnitId,
+      size: AdSize.banner,
+      targetingInfo: targetingInfo,
+      listener: (MobileAdEvent event){
+        print("Banner ad $event");
+      }
+    );
+  }
+  @override
+  void initState() {
+    // TODO: implement initState
+    FirebaseAdMob.instance.initialize(
+      appId: BannerAd.testAdUnitId
+    );
+    _bannerAd = createBannerAd()..load()..show();
+    super.initState();
+  }
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    _bannerAd.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
