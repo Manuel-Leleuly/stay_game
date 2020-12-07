@@ -22,7 +22,8 @@ class TitleText{
   void update(double t){
     int highscore = (game.storage.getInt('highscore') ?? 0);
     painter.text = TextSpan(
-        text: "Stay?",
+        text: "Stay?\n"
+            "tap 2x to play",
         style: TextStyle(
             color: Colors.white,
             fontSize: fontSize

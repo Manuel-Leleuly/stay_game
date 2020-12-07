@@ -9,7 +9,8 @@ import 'package:stay/stay-game.dart';
 SharedPreferences storage;
 StayGame game;
 
-const String testDevice = 'Mobile_id';
+const String testDevice = 'E8D4DB21A1FC5019844AE98BE4EB7337';
+// const String testDevice = 'Mobile_ID';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -38,12 +39,12 @@ class _RunAppState extends State<RunApp> {
   static const MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
     testDevices: testDevice != null ? <String>[testDevice] : null,
     nonPersonalizedAds: true,
-    keywords: <String>['Game','Puzzle','Block']
+    keywords: <String>['Game']
   );
   BannerAd _bannerAd;
   BannerAd createBannerAd(){
     return BannerAd(
-      adUnitId: BannerAd.testAdUnitId,
+      adUnitId: 'ca-app-pub-6071397204389523/6658590738',
       size: AdSize.banner,
       targetingInfo: targetingInfo,
       listener: (MobileAdEvent event){
@@ -55,7 +56,7 @@ class _RunAppState extends State<RunApp> {
   void initState() {
     // TODO: implement initState
     FirebaseAdMob.instance.initialize(
-      appId: BannerAd.testAdUnitId
+      appId: 'ca-app-pub-6071397204389523~7181033593'
     );
     _bannerAd = createBannerAd()..load()..show();
     super.initState();

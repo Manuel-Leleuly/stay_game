@@ -30,7 +30,7 @@ class StartButton{
             "don't touch the ground\n"
             "don't touch the incoming bar\n"
             "easy, right?\n\n"
-            "tap 2x to start",
+            "bar off screen -> score++",
         style: TextStyle(
             color: Colors.white,
             fontSize: fontSize

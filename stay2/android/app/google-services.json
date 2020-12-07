@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "667981457829",
+    "project_id": "stay-admob",
+    "storage_bucket": "stay-admob.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:667981457829:android:47ac0f95f226f18022604c",
+        "android_client_info": {
+          "package_name": "com.example.stay2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "667981457829-0ooumt01k3li7nd6m2a90tmqdkv9556d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfcvsp9kfFlm-6244qe0LvmUQX-7HgDG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "667981457829-0ooumt01k3li7nd6m2a90tmqdkv9556d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
