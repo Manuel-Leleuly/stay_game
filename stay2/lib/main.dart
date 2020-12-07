@@ -39,12 +39,12 @@ class _RunAppState extends State<RunApp> {
   static const MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
     testDevices: testDevice != null ? <String>[testDevice] : null,
     nonPersonalizedAds: true,
-    keywords: <String>['Game']
+    keywords: <String>['Games']
   );
   BannerAd _bannerAd;
   BannerAd createBannerAd(){
     return BannerAd(
-      adUnitId: 'ca-app-pub-6071397204389523/6658590738',
+      adUnitId: 'ca-app-pub-6071397204389523/1576287462',
       size: AdSize.banner,
       targetingInfo: targetingInfo,
       listener: (MobileAdEvent event){
@@ -56,7 +56,7 @@ class _RunAppState extends State<RunApp> {
   void initState() {
     // TODO: implement initState
     FirebaseAdMob.instance.initialize(
-      appId: 'ca-app-pub-6071397204389523~7181033593'
+      appId: 'ca-app-pub-6071397204389523~8216883289'
     );
     _bannerAd = createBannerAd()..load()..show();
     super.initState();

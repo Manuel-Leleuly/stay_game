@@ -1,4 +1,4 @@
-package com.example.stay2
+package com.toothbrush.stay
 
 import io.flutter.embedding.android.FlutterActivity
 

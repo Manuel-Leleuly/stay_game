@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "667981457829",
-    "project_id": "stay-admob",
-    "storage_bucket": "stay-admob.appspot.com"
+    "project_number": "281668873006",
+    "project_id": "stay-admob-f0549",
+    "storage_bucket": "stay-admob-f0549.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:667981457829:android:47ac0f95f226f18022604c",
+        "mobilesdk_app_id": "1:281668873006:android:078888c23146c66af628bf",
         "android_client_info": {
-          "package_name": "com.example.stay2"
+          "package_name": "com.toothbrush.stay"
         }
       },
       "oauth_client": [
         {
-          "client_id": "667981457829-0ooumt01k3li7nd6m2a90tmqdkv9556d.apps.googleusercontent.com",
+          "client_id": "281668873006-bc5vj30qpd87mpinakthd33kanovb0bt.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBfcvsp9kfFlm-6244qe0LvmUQX-7HgDG0"
+          "current_key": "AIzaSyChqSF_wxvpYjghC_QqBgFak0okyTE2wMY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "667981457829-0ooumt01k3li7nd6m2a90tmqdkv9556d.apps.googleusercontent.com",
+              "client_id": "281668873006-bc5vj30qpd87mpinakthd33kanovb0bt.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
